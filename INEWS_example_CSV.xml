@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NewsML Version="1.2">
+  <!--
+Documentation:   
+IMPORTANT INFO:
+    - Tesauro deprecated: Use SubjetCode.-->
+  <NewsEnvelope>
+    <DateAndTime>20240515T140206+0000</DateAndTime>
+  </NewsEnvelope>
+  <!--** SUGGESTION FOR DEVS: Use 'Duid' attribute to help you on XPath navigation.-->
+  <NewsItem Duid="text_55013577599">
+    <Comment FormalName="EfeNewsMLVersion">1.0.1</Comment>    
+    <NewsManagement>
+      <NewsItemType FormalName="News" />
+      <!--Creation date.-->
+      <FirstCreated>20240515T122125+0000</FirstCreated>
+      <!--Last modification date.-->
+      <ThisRevisionCreated>20240515T140119+0000</ThisRevisionCreated>
+      <Status FormalName="Usable" />
+      <Urgency FormalName="5" />
+    </NewsManagement>
+    <NewsComponent Duid="text_55013577599.text">
+      <Role FormalName="Main" />
+      <NewsLines>
+        <!--Title-->
+        <HeadLine>Alemania ve alejarse a Georgia de Europa y apoya las protestas a la "ley rusa"</HeadLine>
+        <SubHeadLine>GEORGIA OPOSICIÓN</SubHeadLine>
+        <RunDownLine1>PRUEBA_L1</RunDownLine1>
+		<RunDownLine2>PRUEBA_L2</RunDownLine2>
+		<RunDownLine3>PRUEBA_L3</RunDownLine3>
+		<RunDownLine4>PRUEBA_L4_title</RunDownLine4>
+      </NewsLines>
+      <AdministrativeMetadata>
+        <Provider>
+          <Party FormalName="Agencia EFE" />
+        </Provider>
+      </AdministrativeMetadata>
+      <DescriptiveMetadata>
+        <Language FormalName="es-ES" />
+        <Location HowPresent="Event">
+          <!--Country: ISO 3166-1 alpha3 code.-->
+          <Property FormalName="Country" Value="DEU" />
+          <Property FormalName="City" Value="Berlín" />
+        </Location>
+        <SubjectCode>
+          <!--Política-->
+          <!--Politica-->
+          <!--Politics-->
+          <!--Política-->
+          <!--سياسة-->
+          <!--Política-->
+          <Subject FormalName="11000000" Scheme="IptcSubjectCodes" />
+        </SubjectCode>
+        <SubjectCode>
+          <!--Política ; Asuntos exteriores-->
+          <!--Politica ; Afers estrangers-->
+          <!--Politics ; Diplomacy-->
+          <!--Política ; Diplomacia-->
+          <!--سياسة ; شئون خارجية-->
+          <!--Política ; Asuntos exteriores-->
+          <SubjectMatter FormalName="11002000" Scheme="IptcSubjectCodes" />
+        </SubjectCode>
+        <Property FormalName="Tesauro" Value="POL:POLITICA;POL:POLITICA,EXTERIOR" />
+        <Property FormalName="EfePais" Value="DEU" />
+        <Property FormalName="EfeRegional" Value="" />
+        <Property FormalName="EfeComplemento" Value="" />
+      </DescriptiveMetadata>
+      <ContentItem>
+        <MediaType FormalName="Text" />
+        <Format FormalName="NITF" />
+        <MimeType FormalName="text/vnd.IPTC.NITF" />
+        <DataContent>
+          <nitf version="-//IPTC//DTD NITF 3.2//EN" change.date="October 10, 2003" change.time="19:30" baselang="es-ES">
+            <body>
+              <body.head>
+              <body.content>
+                <p>prueba linea de texto 1 del cuerpo noticia </p>
+                <p>prueba linea de texto 2 del cuerpo noticia</p>
+              </body.content>
+            </body>
+          </nitf>
+        </DataContent>
+      </ContentItem>
+    </NewsComponent>
+  </NewsItem>
+</NewsML>
