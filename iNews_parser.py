@@ -106,7 +106,7 @@ for idx, row in enumerate(csv_data):
 
     # Save to a file
     output_file_path = r"C:\Users\franciscojavier.mart\Documents\iNews_parser\csv\prueba_" + str(idx+1) + "_" + csv_filename + ".xml"
-    with open(output_file_path, "w", encoding="utf-8-sig") as f:
+    with codecs.open(output_file_path, "w", encoding="utf-8-sig") as f:
         f.write(xml_str)
 
 print("XML files generated successfully.")
